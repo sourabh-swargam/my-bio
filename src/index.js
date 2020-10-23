@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Navigator from './Navigator';
+import ProjectPage from './ProjectPage';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
     <Navigator />
+    <ProjectPage />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -5,11 +5,12 @@ function Navigator()
 {
     return (
         <Navbar bg="light" variant="light">
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="mr-auto">
+          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+          <Nav className="ml-auto">
             <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Features</Nav.Link>
-            <Nav.Link href="#pricing">Pricing</Nav.Link>
+            <Nav.Link href="#aboutme">About Me</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#blog">Blog</Nav.Link>
           </Nav>
         </Navbar>
     );
