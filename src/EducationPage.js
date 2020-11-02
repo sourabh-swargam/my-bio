@@ -1,48 +1,36 @@
 import React from "react";
-import { Badge, Button } from "react-bootstrap";
 import {
 	VerticalTimeline,
 	VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import project_data from "./project-data/project-info.js";
+import education_data from "./education-data/education-info.js";
 
-function ProjectElement(props) {
-	const pills = props.project.technology.map((each) => {
-		return (
-			<span>
-				<Badge pill variant="secondary">
-					{each}
-				</Badge>{" "}
-			</span>
-		);
-	});
+function EducationElement(props) {
 	return (
 		<VerticalTimelineElement
 			className="vertical-timeline-element--work"
 			iconStyle={{
-				background: props.project.bgcolor,
+				background: "white",
 				color: "#fff",
 			}}
-			icon={props.project.icon}
-			date={props.project.date}
+			icon={props.item.icon}
+			date={props.item.date}
 			contentStyle={{
-				background: props.project.bgcolor,
+				background: "white",
 				color: "red",
 			}}
 			contentArrowStyle={{
-				borderRight: `7px solid  ${props.project.bgcolor}`,
+				borderRight: `7px solid white`,
 			}}
 		>
 			<h3 className="vertical-timeline-element-title">
-				{props.project.name}
+				{props.item.college}
 			</h3>
-			<h4 className="vertical-timeline-element-subtitle">{pills}</h4>
-			<p>{props.project.role}</p>
-			<p>{props.project.description}</p>
-			<p>
-				<Button variant="dark">KNOW MORE</Button>
-			</p>
+			<h4 className="vertical-timeline-element-subtitle">
+				{props.item.degree}
+			</h4>
+			<p>Aggregate: {props.item.agg}</p>
 		</VerticalTimelineElement>
 	);
 }
@@ -54,13 +42,13 @@ class ProjectPage extends React.Component {
 	}
 
 	render() {
-		const projectComponents = project_data.map((each) => {
-			return <ProjectElement key={each.id} project={each} />;
+		const educationComponents = education_data.map((each) => {
+			return <EducationElement key={each.id} item={each} />;
 		});
 		return (
 			<div style={{ backgroundColor: "gray" }}>
 				<VerticalTimeline>
-					{projectComponents}
+					{educationComponents}
 					<VerticalTimelineElement
 						iconStyle={{
 							background: "rgb(16, 204, 82)",
