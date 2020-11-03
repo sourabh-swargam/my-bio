@@ -73,7 +73,7 @@ const project_data = [
 		role: "Developer",
 		description: "TEXT",
 		icon: <PythonLogo />,
-		bgcolor: "lightyellow",
+		bgcolor: "yellow",
 	},
 ];
 

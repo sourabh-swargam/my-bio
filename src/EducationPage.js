@@ -27,9 +27,9 @@ function EducationElement(props) {
 			<h3 className="vertical-timeline-element-title">
 				{props.item.college}
 			</h3>
-			<h4 className="vertical-timeline-element-subtitle">
+			<h5 className="vertical-timeline-element-subtitle">
 				{props.item.degree}
-			</h4>
+			</h5>
 			<p>Aggregate: {props.item.agg}</p>
 		</VerticalTimelineElement>
 	);

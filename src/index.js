@@ -6,13 +6,12 @@ import Navigator from "./Navigator";
 import ProjectPage from "./ProjectPage";
 import EducationPage from "./EducationPage";
 import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter } from "react-router-dom";
 
 ReactDOM.render(
-	<React.StrictMode>
-		<Navigator />
-		<ProjectPage />
-		<EducationPage />
-	</React.StrictMode>,
+	<BrowserRouter>
+		<App />
+	</BrowserRouter>,
 	document.getElementById("root")
 );
 
