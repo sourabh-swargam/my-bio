@@ -39,7 +39,7 @@ function ProjectElement(props) {
 			</h3>
 			<h4 className="vertical-timeline-element-subtitle">{pills}</h4>
 			<p>{props.project.role}</p>
-			<p>{props.project.description}</p>
+			<p style={{ textAlign: "justify" }}>{props.project.description}</p>
 			<p>
 				<Button variant="dark">KNOW MORE</Button>
 			</p>

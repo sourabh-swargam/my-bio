@@ -1,0 +1,25 @@
+Argon Assault:
+A rail shooter game where the player controls a spaceship. The player needs
+to dodge the enemies and enemy projectiles and navigate around terrain
+obstacles and achieve high score.
+
+Project Boost:
+A 3D prototype game, where the player controls and rocket and needs to
+avoid crashing the rocket and land safely on the landing pad in order to
+progress through the game.
+
+Tile-vania:
+2D platformer prototype where the player controls an adventurer has to travel into the dungeon avoiding hazards and monsters. 
+
+Placement prep Assistant:
+A web app that lets the user pick a dream job and then create a strategy for that dream job while providing deadlines for created tasks.
+
+Glitch Garden:
+A 2D strategy game where the user has to manage resources and protect the garden from feral foxes and other monsters.
+
+Laser Defender:
+A bullet hell 2D prototype, where the player has to dodge enemies and their lasers while surviving for as long as possible.  
+
+
+VK OPENCV:
+Allows the users to type text onto a notepad app using a keyboard interface. A webcam tracks the users finger and translates it to keystrokes.
