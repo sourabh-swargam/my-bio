@@ -2,9 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import Navigator from "./Navigator";
-import ProjectPage from "./ProjectPage";
-import EducationPage from "./EducationPage";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 
